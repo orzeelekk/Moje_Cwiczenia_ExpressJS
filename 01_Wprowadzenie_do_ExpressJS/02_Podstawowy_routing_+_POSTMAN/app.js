@@ -7,6 +7,12 @@ app.get('/test',(req,res) => {
 app.post('/test',(req,res) => {
     res.send('Hello world POST!')
 })
+app.put('/test',(req,res) => {
+    res.send('Hello world put!')
+})
+app.delete('/test',(req,res) => {
+    res.send('Hello world DELETE!')
+})
 app.get('/book',(req,res) => {
     res.json({title: "LOTR"})
 })
