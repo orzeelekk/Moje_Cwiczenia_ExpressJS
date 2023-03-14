@@ -1,0 +1,321 @@
+[
+  {
+    "title": "Unlocking Android",
+    "isbn": "1933988673",
+    "pageCount": 416,
+    "publishedDate": { "$date": "2009-04-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+    "categories": ["Open Source", "Mobile"]
+  },
+  {
+    "title": "Android in Action, Second Edition",
+    "isbn": "1935182722",
+    "pageCount": 592,
+    "publishedDate": { "$date": "2011-01-14T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["W. Frank Ableson", "Robi Sen"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "Specification by Example",
+    "isbn": "1617290084",
+    "pageCount": 0,
+    "publishedDate": { "$date": "2011-06-03T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Gojko Adzic"],
+    "categories": ["Software Engineering"]
+  },
+  {
+    "title": "Flex 3 in Action",
+    "isbn": "1933988746",
+    "pageCount": 576,
+    "publishedDate": { "$date": "2009-02-02T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Tariq Ahmed with Jon Hirschi", "Faisal Abid"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "Flex 4 in Action",
+    "isbn": "1935182420",
+    "pageCount": 600,
+    "publishedDate": { "$date": "2010-11-15T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "Collective Intelligence in Action",
+    "isbn": "1933988312",
+    "pageCount": 425,
+    "publishedDate": { "$date": "2008-10-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Satnam Alag"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "Zend Framework in Action",
+    "isbn": "1933988320",
+    "pageCount": 432,
+    "publishedDate": { "$date": "2008-12-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Rob Allen", "Nick Lo", "Steven Brown"],
+    "categories": ["Web Development"]
+  },
+  {
+    "title": "Flex on Java",
+    "isbn": "1933988797",
+    "pageCount": 265,
+    "publishedDate": { "$date": "2010-10-15T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Bernerd Allmon", "Jeremy Anderson"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "Griffon in Action",
+    "isbn": "1935182234",
+    "pageCount": 375,
+    "publishedDate": { "$date": "2012-06-04T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Andres Almiray", "Danno Ferrin", "", "James Shingler"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "OSGi in Depth",
+    "isbn": "193518217X",
+    "pageCount": 325,
+    "publishedDate": { "$date": "2011-12-12T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Alexandre de Castro Alves"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "Flexible Rails",
+    "isbn": "1933988509",
+    "pageCount": 592,
+    "publishedDate": { "$date": "2008-01-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Peter Armstrong"],
+    "categories": ["Web Development"]
+  },
+  {
+    "title": "Hello! Flex 4",
+    "isbn": "1933988762",
+    "pageCount": 258,
+    "publishedDate": { "$date": "2009-11-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Peter Armstrong"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "Coffeehouse",
+    "isbn": "1884777384",
+    "pageCount": 316,
+    "publishedDate": { "$date": "1997-07-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Levi Asher", "Christian Crumlish"],
+    "categories": ["Miscellaneous"]
+  },
+  {
+    "title": "Team Foundation Server 2008 in Action",
+    "isbn": "1933988592",
+    "pageCount": 344,
+    "publishedDate": { "$date": "2008-12-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Jamil Azher"],
+    "categories": ["Microsoft .NET"]
+  },
+  {
+    "title": "Brownfield Application Development in .NET",
+    "isbn": "1933988711",
+    "pageCount": 550,
+    "publishedDate": { "$date": "2010-04-16T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Kyle Baley", "Donald Belcham"],
+    "categories": ["Microsoft"]
+  },
+  {
+    "title": "MongoDB in Action",
+    "isbn": "1935182870",
+    "pageCount": 0,
+    "publishedDate": { "$date": "2011-12-12T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Kyle Banker"],
+    "categories": ["Next Generation Databases"]
+  },
+  {
+    "title": "Distributed Application Development with PowerBuilder 6.0",
+    "isbn": "1884777686",
+    "pageCount": 504,
+    "publishedDate": { "$date": "1998-06-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Michael J. Barlotta"],
+    "categories": ["PowerBuilder"]
+  },
+  {
+    "title": "Jaguar Development with PowerBuilder 7",
+    "isbn": "1884777864",
+    "pageCount": 550,
+    "publishedDate": { "$date": "1999-08-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Michael Barlotta"],
+    "categories": ["PowerBuilder", "Client-Server"]
+  },
+  {
+    "title": "Taming Jaguar",
+    "isbn": "1884777686",
+    "pageCount": 362,
+    "publishedDate": { "$date": "2000-07-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Michael J. Barlotta", "Jason R. Weiss"],
+    "categories": ["PowerBuilder"]
+  },
+  {
+    "title": "3D User Interfaces with Java 3D",
+    "isbn": "1884777902",
+    "pageCount": 520,
+    "publishedDate": { "$date": "2000-08-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Jon Barrilleaux"],
+    "categories": ["Java", "Computer Graphics"]
+  },
+  {
+    "title": "Hibernate in Action",
+    "isbn": "193239415X",
+    "pageCount": 400,
+    "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "Hibernate in Action (Chinese Edition)",
+    "pageCount": 400,
+    "publishedDate": { "$date": "1999-06-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "Java Persistence with Hibernate",
+    "isbn": "1932394885",
+    "pageCount": 880,
+    "publishedDate": { "$date": "2006-11-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "JSTL in Action",
+    "isbn": "1930110529",
+    "pageCount": 480,
+    "publishedDate": { "$date": "2002-07-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Shawn Bayern"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "iBATIS in Action",
+    "isbn": "1932394826",
+    "pageCount": 384,
+    "publishedDate": { "$date": "2007-01-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Clinton Begin", "Brandon Goodin", "Larry Meadors"],
+    "categories": ["Web Development"]
+  },
+  {
+    "title": "Designing Hard Software",
+    "isbn": "133046192",
+    "pageCount": 350,
+    "publishedDate": { "$date": "1997-02-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Douglas W. Bennett"],
+    "categories": ["Object-Oriented Programming", "S"]
+  },
+  {
+    "title": "Hibernate Search in Action",
+    "isbn": "1933988649",
+    "pageCount": 488,
+    "publishedDate": { "$date": "2008-12-21T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Emmanuel Bernard", "John Griffin"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "jQuery in Action",
+    "isbn": "1933988355",
+    "pageCount": 376,
+    "publishedDate": { "$date": "2008-01-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Bear Bibeault", "Yehuda Katz"],
+    "categories": ["Web Development"]
+  },
+  {
+    "title": "jQuery in Action, Second Edition",
+    "isbn": "1935182323",
+    "pageCount": 488,
+    "publishedDate": { "$date": "2010-06-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Bear Bibeault", "Yehuda Katz"],
+    "categories": ["Java"]
+  },
+  {
+    "title": "Building Secure and Reliable Network Applications",
+    "isbn": "1884777295",
+    "pageCount": 591,
+    "publishedDate": { "$date": "1996-01-01T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Kenneth P. Birman"],
+    "categories": ["Networking", "Theory"]
+  },
+  {
+    "title": "Ruby for Rails",
+    "isbn": "1932394699",
+    "pageCount": 532,
+    "publishedDate": { "$date": "2006-05-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["David A. Black"],
+    "categories": ["Web Development"]
+  },
+  {
+    "title": "The Well-Grounded Rubyist",
+    "isbn": "1933988657",
+    "pageCount": 520,
+    "publishedDate": { "$date": "2009-04-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["David A. Black"],
+    "categories": ["Programming"]
+  },
+  {
+    "title": "Website Owner's Manual",
+    "isbn": "1933988452",
+    "pageCount": 296,
+    "publishedDate": { "$date": "2009-10-01T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": ["Paul A. Boag"],
+    "categories": ["Internet"]
+  },
+  {
+    "title": "ASP.NET 4.0 in Practice",
+    "isbn": "1935182463",
+    "pageCount": 504,
+    "publishedDate": { "$date": "2011-05-15T00:00:00.000-0700" },
+    "status": "PUBLISH",
+    "authors": [
+      "Daniele Bochicchio",
+      "Stefano Mostarda",
+      "",
+      "Marco De Sanctis"
+    ],
+    "categories": ["Microsoft .NET"]
+  },
+  {
+    "title": "Hello! Python",
+    "isbn": "1935182080",
+    "pageCount": 350,
+    "publishedDate": { "$date": "2012-02-13T00:00:00.000-0800" },
+    "status": "PUBLISH",
+    "authors": ["Anthony Briggs"],
+    "categories": ["Python"]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "04_static_files",
+  "version": "1.0.0",
+  "description": "Serwowanie plików statycznych",
+  "main": "app.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}

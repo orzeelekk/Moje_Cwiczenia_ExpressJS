@@ -1,0 +1,5 @@
+exercises:
+    '01_Pierwsza aplikacja serwerowa w ExpressJS': { max_points: 0, disabled: true }
+    '02_Podstawowy routing + POSTMAN': { max_points: 0, disabled: true }
+    '03_Debugowanie z modułem debug': { max_points: 0, disabled: true }
+    '04_Serwowanie statycznych plików - zadanie dodatkowe': { max_points: 0, disabled: true }

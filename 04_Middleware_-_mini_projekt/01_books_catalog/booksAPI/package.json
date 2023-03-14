@@ -1,0 +1,19 @@
+{
+  "name": "books_api",
+  "version": "1.0.0",
+  "description": "Aplikacja serwująca dane książek",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}

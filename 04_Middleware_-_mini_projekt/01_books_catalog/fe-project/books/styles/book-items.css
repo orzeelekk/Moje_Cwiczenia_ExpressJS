@@ -1,0 +1,135 @@
+
+/* Book Items */
+.book-items li + li {
+    border-top: 1px solid #f0f0f0;
+}
+.book-items li.highlight {
+    box-shadow:
+        0 8px 28px rgba(111,44,193,0.25),
+        0 -8px 28px rgba(111,44,193,0.25),
+        8px 0 28px rgba(111,44,193,0.25),
+        -8px 0 28px rgba(111,44,193,0.25);
+}
+.book-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.book-item + .book-item {
+    border-top: 1px solid  red;
+}
+@media(min-width: 768px) {
+    .book-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    };
+}
+
+/* Book Add and Book Edit */
+.book-modal-instructions {
+    margin-top: 36px;
+}
+
+.book-add-actions {
+    display: flex;
+    margin-top: 36px;
+}
+
+.book-actions {
+    display: flex;
+    margin-top: 12px;
+}
+
+.book-add-actions .button,
+.book-actions .button {
+    flex-grow: 1;
+}
+
+.book-add-actions .button + .button,
+.book-actions .button + .button {
+    margin-left: 18px;
+}
+
+@media(min-width: 768px) {
+    .book-actions {
+        margin-top: 0;
+        padding-left: 12px;
+    }
+}
+
+.book-add-wrapper {
+    padding: 0 20px;
+}
+
+.book-add-form,
+.book-edit-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.book-add-form {
+    margin-top: 36px;
+}
+
+@media(min-width: 768px) {
+    .book-edit-form {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .book-form-inputs {
+        flex-grow: 1;
+    }
+}
+
+/* Book Inputs Template */
+.book-form-inputs {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.book-input-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.book-input-row + .book-input-row {
+    margin-top: 10px;
+}
+
+.book-input-label-text {
+    flex: 50px 0 1;
+}
+
+.book-input-row input {
+    flex: auto 1 1;
+}
+
+/* Book Display Template */
+.book-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.book-title::before, .book-title::after {
+    content: '"';
+}
+
+.book-additional-info {
+    display: block;
+    font-size: 1rem;
+    margin-top: 6px;
+}
+
+.book-author {
+    font-weight: bold;
+}
+
+.book-release-year {
+    font-style: italic;
+}

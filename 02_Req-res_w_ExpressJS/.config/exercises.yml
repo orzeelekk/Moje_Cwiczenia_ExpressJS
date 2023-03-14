@@ -1,0 +1,3 @@
+exercises:
+    01_http_to_express: { max_points: 0, disabled: true }
+    '02_Routing i middleware wstęp': { max_points: 0, disabled: true }

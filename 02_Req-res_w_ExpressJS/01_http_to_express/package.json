@@ -1,0 +1,13 @@
+{
+  "name": "01_http_to_express",
+  "version": "1.0.0",
+  "description": "Zamiana aplikacji http na express",
+  "main": "app.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mime": "^2.4.4"
+  }
+}

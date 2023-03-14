@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "name": "01_first_page",
+  "version": "1.0.0",
+  "description": "Pierwsza strona w Express.js",
+  "main": "app.js",
+  "devDependencies": {},
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}
