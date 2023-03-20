@@ -66,7 +66,7 @@ app.use((err, req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-    res.status(500).send("JAKIŚ INNY BŁĄD");
+    res.status(500).send(err.message)
 });
 
 app.use((req, res,next) => {

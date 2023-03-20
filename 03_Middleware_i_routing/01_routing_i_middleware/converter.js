@@ -17,6 +17,7 @@ router.get('/:currency/:amount',(req,res,next) => {
         req.amount = parseFloat(amount);
         //prasowanie i polowanie na inna walute
         next('route')
+        //route ma sens jak jest opisany na koncu, tu dodatkowo opisany
     }
 })
 router.get('/:currency/:amount',(req,res,next) => {
@@ -30,6 +31,7 @@ router.get('/:currency/:amount',(req,res,next) => {
     if (req.params.currency === 'CHF') {
         res.send(`${req.amount * 5.00}`)
     } else {
+        //przekazanie na appa z coverter
         next('router');
     }
 })

@@ -7,7 +7,7 @@ const operations = ['add','subtract','divide','multiply','modulo'];
 router.get('/:num1/:operation/:num2',(req,res,next) => {
     const num1 = parseInt(req.params.num1);
     const num2 = parseInt(req.params.num2);
-    if (isNaN(num1) || isNan(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         res.status(409);
         next(new Error('Not a number!'));
     } else if (!operations.includes(req.params.operation)) {
@@ -32,7 +32,9 @@ router.get('/:num1/:operation/:num2',(req,res,next) => {
                 result = num1 % num2
                 break
         }
-        res.send(result)
+        //musi byc po tyldzie
+        res.send(`${result}`)
+
     }
 })
 router.use((err,req,res,next) => {
