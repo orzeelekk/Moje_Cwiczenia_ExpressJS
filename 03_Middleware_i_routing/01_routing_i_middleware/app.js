@@ -1,6 +1,9 @@
+//app.js
 import express from "express";
+//mus byc calc.js!
+import { router as calc } from './calc.js';
 const app = express();
-
+app.use('/calc/', calc);
 const users = [];
 
 for (let i = 1; i <= 10; i++) {
@@ -70,3 +73,4 @@ app.use((req, res) => {
 app.listen(3000, () => {
     console.log("Ruszam");
 });
+
