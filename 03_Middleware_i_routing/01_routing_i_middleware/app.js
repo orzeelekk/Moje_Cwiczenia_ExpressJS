@@ -2,8 +2,11 @@
 import express from "express";
 //mus byc calc.js!
 import { router as calc } from './calc.js';
+import { router as  converter } from './converter.js'
 const app = express();
-app.use('/calc/', calc);
+app.use('/calc', calc);
+app.use('/toPLN', converter);
+
 const users = [];
 
 for (let i = 1; i <= 10; i++) {
@@ -66,7 +69,7 @@ app.use((err, req, res, next) => {
     res.status(500).send("JAKIŚ INNY BŁĄD");
 });
 
-app.use((req, res) => {
+app.use((req, res,next) => {
     res.status(404).send("ADRES NIE ISTNIEJE");
 });
 
