@@ -12,3 +12,8 @@ router.get('/',async(req,res,next) => {
         next(err)
     }
 });
+//bledy dla routera
+router.use((err,res,next) => {
+    const error = { status:res.statusCode, error: err.message };
+    res.send(error)
+})
