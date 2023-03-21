@@ -99,3 +99,19 @@ const corsOptions = {
     credentials: true,
 }
 router.use(cors(corsOptions))
+
+router.use('/', (req, res, next) => {
+    console.log(req.cookies)
+    res.cookie('role','admin', {
+        sameSite: 'None'
+    })
+    if (
+        req.cookies.role !== 'admin' && ['PUT','DELETE','POST'].includes(req.method)
+    ) {
+        res.status(403)
+        next(new Error('Not an admin here!'))
+    } else {
+        next()
+    }
+
+})
