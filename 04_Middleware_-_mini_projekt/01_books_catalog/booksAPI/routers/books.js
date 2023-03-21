@@ -1,6 +1,7 @@
 import express from 'express'
 import {getBooks,saveBooks} from "../utils/utils.js";
 import bodyParser from "body-parser";
+import cors from "cors"
 
 export const router = express.Router();
 
@@ -92,3 +93,9 @@ router.delete('/id:',async (req,res,next) => {
         next(err)
     }
 })
+const corsOptions = {
+    origin: 'http://localhost:3001',
+    methods: 'GET, PUT, POST, DELETE',
+    credentials: true,
+}
+router.use(cors(corsOptions))
