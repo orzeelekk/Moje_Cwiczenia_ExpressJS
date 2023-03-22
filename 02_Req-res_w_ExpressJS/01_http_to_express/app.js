@@ -11,6 +11,11 @@ app.use(express.static('public'));
 app.get('/',(req,res) => {
   res.end();
 })
+//nie wiem czy ten err handler powinien tam siedziec
+app.use(function (err,req,res,next) {
+  console.log(err.stack)
+  res.status(500).send('Somethings broken')
+});
 //to tez dziala
 // app.post('/',(req,res) => {
 //   console.log(req.body)
