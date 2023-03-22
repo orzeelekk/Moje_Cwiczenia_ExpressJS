@@ -70,7 +70,7 @@ app.put('/books/:isbn',async function(req,res,next) {
         const books = await getBooks()
         const bookIndex = books.findIndex((book) => book.isbn === req.params.isbn);
 
-        if (booksIndex === -1) {
+        if (bookIndex === -1) {
             const err = new Errror('Books is already on the list Mr')
             res.status(409)
             next(err)
@@ -79,7 +79,7 @@ app.put('/books/:isbn',async function(req,res,next) {
             const updatedBooks = [
                 ...books.slice(0,bookIndex),
                 updatedBook,
-                ...books.slice(bookIndex,booksIndex + 1),
+                ...books.slice(bookIndex,bookIndex + 1),
             ];
             await fs.promises.writeFile(
                 './data/books.json',
@@ -89,6 +89,30 @@ app.put('/books/:isbn',async function(req,res,next) {
         }
     } catch (err) {
         console.log(err)
+    }
+})
+app.delete('/books/:isbn', async function(req, res, next) {
+    try {
+        const books = await getBooks()
+        const bookIndex = books.findIndex((book) => book.isbn === req.params.isbn);
+        if (bookIndex === -1) {
+            const err = new Errror('Books not on the list')
+            res.status(409)
+            next(err)
+        } else {
+            const updatedBooks = [
+                ...books.slice(0,bookIndex),
+                ...books.slice(bookIndex + 1),
+            ];
+            await fs.promises.writeFile(
+                './data/books.json',
+                JSON.stringify(updatedBooks)
+            );
+            res.json(await getBooks());
+        }
+    } catch (err) {
+        res.status(409)
+        next(err)
     }
 })
 
