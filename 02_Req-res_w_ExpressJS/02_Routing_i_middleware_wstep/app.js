@@ -45,8 +45,8 @@ const saveBooks = async (data) => {
         JSON.stringify(data),
     )
 };
-app.use(express.urlencoded({extended:true}))
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+// app.use(express.urlencoded({ extended: true }));
 
 app.post('/books/:isbn', async function(req, res, next) {
     try {
