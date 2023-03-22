@@ -19,15 +19,15 @@ app.get('/books',async(req,res,next) => {
         next(err)
     }
 });
-app.get('/books/:isbn',async(req,res,next) => {
+app.get('/books/:isbn', async(req,res,next) => {
     try {
         const books = await getBooks()
-        const book = books.find((book) => book.isbn === req.param.isbn);
-        res.json(book)
+        const [book] = books.filter((book) => book.isbn === req.params.isbn);
 
         if (!book) {
+            const err = new Error ('No book found!')
             res.status(409)
-            throw new Error('No book found!')
+            next(err)
         } else {
             res.json(book)
         }
@@ -35,5 +35,9 @@ app.get('/books/:isbn',async(req,res,next) => {
         next(err)
     }
 });
+app.use((err,res,next) => {
+    const error = { message: err.message };
+    res.json(error)
+})
 
 app.listen(3000, () => {console.log('Listening on 3000')})
