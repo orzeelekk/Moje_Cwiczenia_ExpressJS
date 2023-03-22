@@ -127,4 +127,63 @@ const timestampLogger = (req,res,next) => {
 }
 app.all('/books/:isbn',timestampLogger)
 
+app.get('/books', async (req,res,next) => {
+    try {
+        const books = await getBooks();
+
+        if (req.query.category) {
+            const filtered = books.filter((book) =>
+                book.categories.includes(req.query.category),
+            );
+            res.json(filtered);
+        } else {
+            res.json(books);
+        }
+    } catch (err) {
+        next(err)
+    }
+});
+app.get('/books', async (req,res,next) => {
+    try {
+        const books = await getBooks();
+
+        if (req.query.author) {
+            const filtered = books.filter((book) =>
+                book.authors
+                    .map((author) => author.includes(req.query.author))
+                    .some((check) => check),
+            );
+            res.json(filtered);
+        } else {
+            res.json(books);
+        }
+    } catch (err) {
+        next(err)
+    }
+})
+app.get('/books', async (req,res,next) => {
+    try {
+        const books = await getBooks();
+
+        if (req.query.pageCountMin && req.query.pageCountMax) {
+            const filtered = books.filter(
+                (book) =>
+                    book.pageCount > req.query.pageCountMin &&
+                    book.pageCount < req.query.pageCountMax,
+            );
+            res.json(filtered);
+        } else if (req.query.pageCountMin) {
+            const filtered = book.filter(
+                (book) => book.pageCount < req.query.pageCountMax,
+            );
+            res.json(filtered);
+        } else {
+            res.json(books)
+        }
+    } catch (err) {
+        next(err)
+    }
+})
+
+
 app.listen(3000, () => {console.log('Listening on 3000')})
