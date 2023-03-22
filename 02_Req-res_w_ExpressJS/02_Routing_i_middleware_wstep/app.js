@@ -115,5 +115,10 @@ app.delete('/books/:isbn', async function(req, res, next) {
         next(err)
     }
 })
+const myLogger = (req,res,next) => {
+    console.log(`Request /${req.method} ${req.originalUrl}`)
+    next()
+}
+app.use(myLogger)
 
 app.listen(3000, () => {console.log('Listening on 3000')})
