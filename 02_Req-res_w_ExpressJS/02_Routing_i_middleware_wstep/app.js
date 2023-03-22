@@ -121,4 +121,10 @@ const myLogger = (req,res,next) => {
 }
 app.use(myLogger)
 
+const timestampLogger = (req,res,next) => {
+    console.log(`Timestamp for ${req.originalUrl}: ${new Date()}`)
+    next()
+}
+app.all('/books/:isbn',timestampLogger)
+
 app.listen(3000, () => {console.log('Listening on 3000')})
