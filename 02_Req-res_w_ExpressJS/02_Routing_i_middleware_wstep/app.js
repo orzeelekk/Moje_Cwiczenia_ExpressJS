@@ -1,6 +1,7 @@
 import express from 'express'
 import fs from "fs";
 import path from "path";
+import debug from "debug";
 
 const app = express()
 
@@ -188,6 +189,18 @@ app.get('/books', async (req,res,next) => {
 app.use(function (req,res,next) {
     res.status(404).send('Cant find that.')
 })
+
+const appDebug = debug('app');
+
+const myLogger = (req,res,next) => {
+    appDebug(`Request /${req.method} ${req.originalUrl}`)
+    next();
+};
+
+const timestampLogger = (req,res,next) => {
+    appDebug(`Timestamp for ${req.originalUrl}: ${new Date()}`)
+    next();
+};
 
 
 app.listen(3000, () => {console.log('Listening on 3000')})
